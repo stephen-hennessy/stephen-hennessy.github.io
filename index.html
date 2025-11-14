@@ -29,14 +29,63 @@
   <title>Stephen Hennessy, Economics PhD Candidate</title>
 
   <style>
-    .image-left {
-      float: left;
-      margin-right: 15px;
+    body {
+      font-family: Georgia, serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333;
     }
 
     .nav-links {
       text-align: right;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-size: 1.05rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #0056b3;
+      margin-left: 15px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    img.profile-img {
+      max-width: 260px;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .intro-text {
+      flex: 1;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 700px) {
+      .profile-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .intro-text {
+        text-align: center;
+      }
+
+      .nav-links {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -45,19 +94,12 @@
 
   <div class="nav-links">
     <a href="research.html">Research</a>
-    &nbsp;&nbsp;
     <a href="cv.pdf">Curriculum Vitae</a>
   </div>
 
-  <img src="headshot.jpg" width="480" alt="Headshot" class="image-left">
+  <div class="profile-container">
+    <img src="headshot.jpg" alt="Headshot" class="pr
 
-  <p>
-    My name is Stephen Hennessy and I am on the economics PhD job market for 2025–2026. <br>
-    I am based at McMaster University in Hamilton, Ontario. My focus is on quantitative macroeconomics,
-    non-market insurance, and parental altruism. <br>
-    I can be reached at
-    <a href="mailto:hennesss@mcmaster.ca">hennesss@mcmaster.ca</a>.
-  </p>
 
 </body>
 </html>
